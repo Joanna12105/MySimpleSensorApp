@@ -7,17 +7,19 @@ import android.hardware.SensorManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.ArrayAdapter
 import android.widget.ListView
 
 class MainActivity : AppCompatActivity() {
     //Layout
-    private val listviewSensor : ListView by lazy{ findViewById(R.id.listview_sensor) }
+    private val listviewSensor: ListView by lazy { findViewById(R.id.listview_sensor) }
 
     //Variablen
-    private lateinit var sensorList : List<Sensor>
-    private lateinit var sensorManager : SensorManager
-    private lateinit var mAdapter : ArrayAdapter<Sensor>
+    private lateinit var sensorList: List<Sensor>
+    private lateinit var sensorManager: SensorManager
+    private lateinit var mAdapter: ArrayAdapter<Sensor>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,5 +31,19 @@ class MainActivity : AppCompatActivity() {
 
         listviewSensor.adapter = mAdapter
         Log.i(TAG, sensorList.toString())
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_main, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.menuItem -> {
+                return true
+            }
+            else -> return super.onOptionsItemSelected(item)
+        }
     }
 }
