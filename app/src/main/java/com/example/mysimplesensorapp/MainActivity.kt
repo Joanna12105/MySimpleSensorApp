@@ -46,7 +46,13 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent)
                 return true
             }
+            R.id.menuItem2 -> {
+                val intent = Intent(this, LocationActivity::class.java)
+                startActivity(intent)
+                return true
+            }
             else -> return super.onOptionsItemSelected(item)
+
         }
 
     }

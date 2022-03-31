@@ -6,4 +6,7 @@
         android:id="@+id/menuItem"
         android:title="@string/menuItemTxt"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/menuItem2"
+        android:title="LocationActivity" />
 </menu>
