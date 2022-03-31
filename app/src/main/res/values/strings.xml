@@ -2,5 +2,13 @@
     <string name="app_name">MySimpleSensorApp</string>
     <string name="textViewTxt">verfügbare Sensoren</string>
     <string name="menuItemTxt">GyroActivity</string>
+    <string name="resolutionTVtxt">Auflösung: %1$f rad/s</string>
+    <string name="rangeTVtxt">max. Messbereich: %1$f rad/s</string>
+    <string name="XradsTVtxt">X (rad/s)</string>
+    <string name="YradsTVtxt">Y (rad/s)</string>
+    <string name="ZradsTVtxt">Z (rad/s)</string>
+
+
+
 
 </resources>

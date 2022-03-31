@@ -2,6 +2,7 @@ package com.example.mysimplesensorapp
 
 import android.content.ContentValues.TAG
 import android.content.Context
+import android.content.Intent
 import android.hardware.Sensor
 import android.hardware.SensorManager
 import androidx.appcompat.app.AppCompatActivity
@@ -41,9 +42,12 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.menuItem -> {
+                val intent = Intent(this, GyroActivity::class.java)
+                startActivity(intent)
                 return true
             }
             else -> return super.onOptionsItemSelected(item)
         }
+
     }
 }
