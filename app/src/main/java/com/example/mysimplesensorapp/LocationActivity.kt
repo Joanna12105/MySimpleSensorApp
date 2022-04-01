@@ -19,7 +19,7 @@ class LocationActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_location)
 
-        fusedLocationClient.lastLocation.addOnSuccessListener {
+      fusedLocationClient.lastLocation.addOnSuccessListener {
                 if(it != null){
                     tvLocation.text = getString(R.string.locationTVtxt, it.latitude, it.longitude, it.time)
                 }

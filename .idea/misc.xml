@@ -3,10 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Johanna/AndroidStudioProjects/MySimpleSensorApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1335" />
+        <entry key="..\:/Users/Johanna/AndroidStudioProjects/MySimpleSensorApp/app/src/main/res/drawable/MySimpleSensorxt_foreground.xml" value="0.1335" />
+        <entry key="..\:/Users/Johanna/AndroidStudioProjects/MySimpleSensorApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.142" />
+        <entry key="..\:/Users/Johanna/AndroidStudioProjects/MySimpleSensorApp/app/src/main/res/drawable/mysimplesensorxt_foreground.xml" value="0.1335" />
+        <entry key="..\:/Users/Johanna/AndroidStudioProjects/MySimpleSensorApp/app/src/main/res/drawable/sensorapp_foreground.xml" value="0.1" />
         <entry key="..\:/Users/Johanna/AndroidStudioProjects/MySimpleSensorApp/app/src/main/res/layout/activity_gyro.xml" value="0.67" />
         <entry key="..\:/Users/Johanna/AndroidStudioProjects/MySimpleSensorApp/app/src/main/res/layout/activity_location.xml" value="0.3625" />
         <entry key="..\:/Users/Johanna/AndroidStudioProjects/MySimpleSensorApp/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/Johanna/AndroidStudioProjects/MySimpleSensorApp/app/src/main/res/menu/menu_main.xml" value="0.264" />
+        <entry key="..\:/Users/Johanna/AndroidStudioProjects/MySimpleSensorApp/app/src/main/res/mipmap-anydpi-v26/MySimpleSensorxt.xml" value="0.1335" />
+        <entry key="..\:/Users/Johanna/AndroidStudioProjects/MySimpleSensorApp/app/src/main/res/mipmap-anydpi-v26/sensorapp.xml" value="0.1" />
       </map>
     </option>
   </component>
