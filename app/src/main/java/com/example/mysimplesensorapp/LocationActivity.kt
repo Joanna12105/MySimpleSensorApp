@@ -28,7 +28,25 @@ class LocationActivity : AppCompatActivity() {
                 }
             }
 
+        val locationCallback = object :  LocationCallback() {
+            override fun onLocationResult(locationResult : LocationResult) {
+                val location = locationResult.lastLocation
+                if(location != null){
+                    tvLocation.text = getString(R.string.locationTVtxt, location.latitude, location.longitude, location.time)
+                }
+            }
+        }
 
+        fusedLocationClient.requestLocationUpdates(getLocationRequest(), locationCallback, null)
+
+    }
+
+    private fun getLocationRequest() : LocationRequest {
+        val locationRequest = LocationRequest()
+        locationRequest.interval = 10000
+        locationRequest.fastestInterval = 5000
+        locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY)
+        return locationRequest
     }
 }
 
