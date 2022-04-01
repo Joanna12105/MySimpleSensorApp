@@ -18,9 +18,9 @@ class GyroActivity : AppCompatActivity() {
     //Variablen
     private val textResValue : TextView by lazy { findViewById(R.id.resolutionTextView) }
     private val textRangeValue : TextView by lazy { findViewById(R.id.textRangeTextView) }
-    private val XradsTV : TextView by lazy { findViewById(R.id.XradsTV) }
+    /* private val XradsTV : TextView by lazy { findViewById(R.id.XradsTV) }
     private val YradsTV : TextView by lazy { findViewById(R.id.YradsTV) }
-    private val ZradsTV : TextView by lazy { findViewById(R.id.ZradsTV) }
+    private val ZradsTV : TextView by lazy { findViewById(R.id.ZradsTV) } */
     private val textXValue : TextView by lazy { findViewById(R.id.textXValue) }
     private val textYValue : TextView by lazy { findViewById(R.id.textYValue) }
     private val textZValue : TextView by lazy { findViewById(R.id.textZValue) }
