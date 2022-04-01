@@ -7,6 +7,9 @@
     <string name="XradsTVtxt">X (rad/s)</string>
     <string name="YradsTVtxt">Y (rad/s)</string>
     <string name="ZradsTVtxt">Z (rad/s)</string>
+    <string name="no_permission">no permission</string>
+
+
 
 
 </resources>

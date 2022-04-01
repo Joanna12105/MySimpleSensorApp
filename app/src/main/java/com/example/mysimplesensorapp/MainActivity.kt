@@ -1,8 +1,10 @@
 package com.example.mysimplesensorapp
 
+import android.Manifest
 import android.content.ContentValues.TAG
 import android.content.Context
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.hardware.Sensor
 import android.hardware.SensorManager
 import androidx.appcompat.app.AppCompatActivity
@@ -12,6 +14,8 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.ArrayAdapter
 import android.widget.ListView
+import androidx.core.app.ActivityCompat
+import splitties.toast.toast
 
 class MainActivity : AppCompatActivity() {
     //Layout
@@ -52,8 +56,21 @@ class MainActivity : AppCompatActivity() {
                 return true
             }
             else -> return super.onOptionsItemSelected(item)
-
         }
-
+    }
+    private fun onClickMenuPosition() {
+        if(ActivityCompat.checkSelfPermission(applicationContext,
+                Manifest.permission.ACCESS_FINE_LOCATION) !=
+            PackageManager.PERMISSION_GRANTED) {
+            val permissions = arrayOf(android.Manifest.permission
+                .ACCESS_FINE_LOCATION)
+            ActivityCompat.requestPermissions(this, permissions, 0)
+            toast(R.string.no_permission)
+        }
+        else {
+            val intent = Intent(applicationContext,
+                LocationActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
