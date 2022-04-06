@@ -7,9 +7,11 @@
     <string name="XradsTVtxt">X (rad/s)</string>
     <string name="YradsTVtxt">Y (rad/s)</string>
     <string name="ZradsTVtxt">Z (rad/s)</string>
-    <string name="no_permission">no permission</string>
-    <string name="locationTVtxt">Latitude: %1$.4f \nLongitude: %2$.4f \nZeit: %X$tr</string>
     <string name="noAvailablePosition">no available position</string>
+
+    <string name="no_permission">No Permission</string>
+    <string name="location_value">Latitude: %1$.4f\nLongitude: %2$.4f\nZeit:  %3$tr</string>
+    <string name="no_available_position">no Position</string>
 
 
 
