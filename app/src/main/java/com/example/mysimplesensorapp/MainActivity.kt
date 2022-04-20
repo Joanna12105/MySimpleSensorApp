@@ -39,25 +39,30 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.menu_main, menu)
+        val inflater = menuInflater
+        inflater.inflate(R.menu.menu_main, menu)
         return true
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.menuItem -> {
-                val intent = Intent(this, GyroActivity::class.java)
-                startActivity(intent)
+                onClickmenu()
                 return true
             }
             R.id.menuItem2 -> {
-                val intent = Intent(this, LocationActivity::class.java)
-                startActivity(intent)
+                onClickMenuPosition()
                 return true
             }
             else -> return super.onOptionsItemSelected(item)
         }
     }
+
+    private fun onClickmenu(){
+        val intent = Intent(this, GyroActivity::class.java)
+        startActivity(intent)
+    }
+
     private fun onClickMenuPosition() {
         if(ActivityCompat.checkSelfPermission(applicationContext,
                 Manifest.permission.ACCESS_FINE_LOCATION) !=
