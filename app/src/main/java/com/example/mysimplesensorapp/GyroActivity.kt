@@ -38,7 +38,7 @@ class GyroActivity : AppCompatActivity() {
         val gyroListener = object : SensorEventListener {
             override fun onAccuracyChanged(p0: Sensor?, p1: Int) {
                 //Funktion wird von uns nicht benötigt, muss aber vorhanden sein.
-                TODO("not implemented")
+                Log.i(TAG, "onAccuracyChanged")
             }
 
             override fun onSensorChanged(sensorEvent: SensorEvent) {
